@@ -2,9 +2,9 @@ import os
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, PDFSearchTool
 
-# Set your API Keys (add your own api key!)
+# Set your API Keys (add your own api keys!)
 os.environ["OPENAI_API_KEY"] = ""
-os.environ["SERPER_API_KEY"] = "5eb787e895d26e51f754031e92f0e55d73077172"
+os.environ["SERPER_API_KEY"] = ""
 
 # 1. Initialize Tools
 # This tool will index your PDF and allow the agent to query it
@@ -82,3 +82,4 @@ print("## FINAL TAILORED CONTENT ##")
 print("########################\n")
 
 print(result)
+
