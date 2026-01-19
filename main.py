@@ -2,8 +2,8 @@ import os
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, PDFSearchTool
 
-# Set your API Keys
-os.environ["OPENAI_API_KEY"] = "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"
+# Set your API Keys (add your own api key!)
+os.environ["OPENAI_API_KEY"] = ""
 os.environ["SERPER_API_KEY"] = "5eb787e895d26e51f754031e92f0e55d73077172"
 
 # 1. Initialize Tools
@@ -80,4 +80,5 @@ result = job_search_system.kickoff(
 print("\n\n########################")
 print("## FINAL TAILORED CONTENT ##")
 print("########################\n")
+
 print(result)
